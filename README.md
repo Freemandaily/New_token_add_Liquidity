@@ -3,5 +3,5 @@ This program watches the mempool  and notifies on the new token that are added t
 
 
 # REQUIREMENT
-web3.py,
+web3.py &
 telegram
