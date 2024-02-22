@@ -5,12 +5,9 @@ from class_sniper import sniper
 
 network.connect('goerli')
 
-priv1 = '0x9e5839ef55eb53e6a6b4e497e8045e899fb5a5e8c3ed9eb0077c369f7ccf7ae2'
-priv2 = '0x3f022b7cc0898a2f15a7e69880a89c6558e910b4018244ab18cb2697a2db1a72'
+priv1 = ' YOUR PRIVATE KEY'
 
 account1 = accounts.add(priv1)
-account2 = accounts.add(priv2)
-
 token_contract = input('Token contract address\n')
 
 ROUTER_ADDRESS = '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'
@@ -18,7 +15,6 @@ FACTORY_ADDRESS = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
 WETH = '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6'
 
 swap = sniper(account1)
-#swap2 = sniper(account2)
 
 input = 0.001
 profit_percent = 1 
@@ -71,9 +67,5 @@ async def main():
                         break
                 break
 
-                    
-
-zeta = '0xCc7bb2D219A0FC08033E130629C2B854b7bA9195'  
-dai = '0x11fE4B6AE13d2a6055C8D9cF65c55bac32B5d844'      
            
 asyncio.run(main())
